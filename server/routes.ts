@@ -8,3 +8,6 @@ export async function registerRoutes(
 ): Promise<Server> {
   return httpServer;
 }
+
+// Default export for legacy code
+export default registerRoutes;
