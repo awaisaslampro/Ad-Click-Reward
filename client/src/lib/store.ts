@@ -1,6 +1,23 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { addMonths, isSameMonth, startOfMonth } from "date-fns";
+////////////////////////////////////////////
+import tech11 from "../assets/images/product_tech_1_1.jpg";
+import tech12 from "../assets/images/product_tech_1_2.jpg";
+import tech13 from "../assets/images/product_tech_1_3.jpg";
+import tech14 from "../assets/images/product_tech_1_4.jpg";
+import tech15 from "../assets/images/product_tech_1_5.jpg";
+import tech16 from "../assets/images/product_tech_1_6.jpg";
+import tech17 from "../assets/images/product_tech_1_7.jpg";
+import tech18 from "../assets/images/product_tech_1_8.jpg";
+
+import home11 from "../assets/images/product_home_1_1.jpg";
+import home12 from "../assets/images/product_home_1_2.jpg";
+import home13 from "../assets/images/product_home_1_3.jpg";
+import home14 from "../assets/images/product_home_1_4.jpg";
+import home15 from "../assets/images/product_home_1_5.jpg";
+import home16 from "../assets/images/product_home_1_6.jpg";
+import home17 from "../assets/images/product_home_1_7.jpg";
 
 // --- Auth Store ---
 
@@ -72,27 +89,19 @@ const PRODUCT_DATA = [
 ] as const;
 
 // Image paths
+
 const TECH_IMAGES = [
-  "/src/assets/images/product_tech_1_1.jpg",
-  "/src/assets/images/product_tech_1_2.jpg",
-  "/src/assets/images/product_tech_1_3.jpg",
-  "/src/assets/images/product_tech_1_4.jpg",
-  "/src/assets/images/product_tech_1_5.jpg",
-  "/src/assets/images/product_tech_1_6.jpg",
-  "/src/assets/images/product_tech_1_7.jpg",
-  "/src/assets/images/product_tech_1_8.jpg",
+  tech11,
+  tech12,
+  tech13,
+  tech14,
+  tech15,
+  tech16,
+  tech17,
+  tech18,
 ];
 
-const HOME_IMAGES = [
-  "/src/assets/images/product_home_1_1.jpg",
-  "/src/assets/images/product_home_1_2.jpg",
-  "/src/assets/images/product_home_1_3.jpg",
-  "/src/assets/images/product_home_1_4.jpg",
-  "/src/assets/images/product_home_1_5.jpg",
-  "/src/assets/images/product_home_1_6.jpg",
-  "/src/assets/images/product_home_1_7.jpg",
-];
-
+const HOME_IMAGES = [home11, home12, home13, home14, home15, home16, home17];
 const generateAds = (): Ad[] => {
   // We have exactly 15 products and 15 images (8 tech + 7 home = 15).
   // Perfect match.
