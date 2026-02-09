@@ -106,7 +106,7 @@ export default function DashboardPage() {
                   Monthly Goal <Trophy className="w-6 h-6 text-emerald-400" />
                 </h2>
                 <p className="text-zinc-400 max-w-md">
-                  Explore as you want also all 15 sponsored products this month to unlock your
+                  Explore all 15 sponsored products this month to unlock your
                   full reward.
                 </p>
               </div>
